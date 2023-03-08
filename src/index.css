@@ -1,0 +1,61 @@
+@import "antd/dist/reset.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.menuBar {
+  border-bottom: solid 1px #e8e8e8;
+  box-shadow: 0 0 30px #f3f1f1;
+}
+
+.logo {
+  width: 180px;
+  float: left;
+}
+
+.content {
+  padding: 24px;
+  min-height: 79vh;
+  background-color: white;
+}
+
+.cardImage {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18em;
+  background-color: #f9f9f9;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .cardImage {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #f9f9f9;
+    background-size: cover;
+  }
+  .barsMenu {
+    display: inline-block;
+  }
+
+  .logo a {
+    margin-left: -20px;
+  }
+
+  .menuCon .ant-menu-item,
+  .menuCon .ant-menu-submenu-title {
+    padding: 1px 20px;
+  }
+
+  .logo a {
+    padding: 10px 20px;
+  }
+}
